@@ -10,7 +10,7 @@ setup(
     version="3.2.1",
     description="Time-Accurate Automatic Speech Recognition using Whisper.",
     readme="README.md",
-    python_requires=">=3.8",
+    python_requires=">=3.12",
     author="Max Bain",
     url="https://github.com/jvlevinson/BetterWhisperX",
     license="MIT",
