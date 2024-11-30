@@ -67,18 +67,18 @@ Tested for PyTorch 2.0, Python 3.10 (use other versions at your own risk!)
 GPU execution requires the NVIDIA libraries cuBLAS 11.x and cuDNN 8.x to be installed on the system. Please refer to the [CTranslate2 documentation](https://opennmt.net/CTranslate2/installation.html).
 
 
-### 1. Create Python3.10 environment
+### 1. Create Python3.12 environment
 
-`conda create --name whisperx python=3.10`
+`conda create --name whisperx python=3.12`
 
 `conda activate whisperx`
 
 
-### 2. Install PyTorch, e.g. for Linux and Windows CUDA11.8:
+### 2. Install PyTorch, e.g. for Linux and Windows CUDA12.4:
 
-`conda install pytorch==2.0.0 torchaudio==2.0.0 pytorch-cuda=11.8 -c pytorch -c nvidia`
+`conda install pytorch torchvision torchaudio pytorch-cuda=12.4 -c pytorch -c nvidia`
 
-See other methods [here.](https://pytorch.org/get-started/previous-versions/#v200)
+See other methods [here.](https://pytorch.org/get-started/previous-versions/)
 
 ### 3. Install this repo
 
