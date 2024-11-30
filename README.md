@@ -95,6 +95,13 @@ $ cd whisperX
 $ pip install -e .
 ```
 
+### 4. Run setup to fix dipendencies
+
+`/home/groot/miniconda3/envs/whisperx/lib/python3.12/site-packages/pyannote/audio/core/inference.py` - ` change `np.NaN` to `np.nan` `np.NaN,` & `np.NaN `
+` rm -rf ~/.cache/torch/whisperx-vad-segmentation.bin`
+
+`python -m pytorch_lightning.utilities.upgrade_checkpoint ../../.cache/torch/whisperx-vad-segmentation.bin`
+
 You may also need to install ffmpeg, rust etc. Follow openAI instructions here https://github.com/openai/whisper#setup.
 
 ### Speaker Diarization
